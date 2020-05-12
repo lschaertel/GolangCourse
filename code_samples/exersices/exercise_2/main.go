@@ -58,6 +58,7 @@ func exercise5() {
 
 const (
 	_ = iota
+
 	c = 2020 + iota
 	d = 2020 + iota
 	e = 2020 + iota
