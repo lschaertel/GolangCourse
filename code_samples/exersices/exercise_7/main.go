@@ -1,25 +1,35 @@
 package main
 
-func main() {
+import "fmt"
 
+func main() {
+	exercise1()
+	exercise2()
 }
 
 func exercise1() {
-
+	i := 42
+	fmt.Println(&i)
 }
+
+type person struct {
+	first string
+	last  string
+	age   int
+}
+
+func changeMe(p *person) {
+	(*p).first = "dereferenced"
+	(*p).last= "structure"
+}
+
 func exercise2() {
-
-}
-func exercise3() {
-
-}
-func exercise4() {
-
-}
-func exercise5() {
-
-}
-
-func exercise6() {
-
+	p1 := person{
+		first: "Ludwiog",
+		last:  "Schärtel",
+		age:   24,
+	}
+	fmt.Println(p1)
+	changeMe(&p1)
+	fmt.Println(p1)
 }
