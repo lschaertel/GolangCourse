@@ -1,25 +1,15 @@
 package main
 
-func main() {
+import (
+	"GolangCourse/code_samples/exersices/exercise_12/dog"
+	"fmt"
+)
 
+func main() {
+	exercise1()
 }
 
 func exercise1() {
-
-}
-func exercise2() {
-
-}
-func exercise3() {
-
-}
-func exercise4() {
-
-}
-func exercise5() {
-
+	fmt.Println(dog.Years(5))
 }
 
-func exercise6() {
-
-}
